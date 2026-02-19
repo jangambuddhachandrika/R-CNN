@@ -1,10 +1,3 @@
-"""
-The most atomic way to train and inference a GPT in pure, dependency-free Python.
-This file is the complete algorithm.
-Everything else is just efficiency.
-@karpathy
-"""
-
 import os       # os.path.exists
 import math     # math.log, math.exp
 import random   # random.seed, random.choices, random.gauss, random.shuffle
@@ -196,4 +189,5 @@ for sample_idx in range(20):
         if token_id == BOS:
             break
         sample.append(uchars[token_id])
+
     print(f"sample {sample_idx+1:2d}: {''.join(sample)}")

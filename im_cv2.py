@@ -5,7 +5,7 @@ from skimage.metrics import peak_signal_noise_ratio as psnr
 from skimage.metrics import structural_similarity as ssim
 
 # ---------------------------------------------------
-# 1. Load Image
+# 1. Load-Image
 # ---------------------------------------------------
 img = cv2.imread("test.jpg")   # change path
 img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
@@ -89,3 +89,4 @@ for i in range(len(images)):
 
 plt.tight_layout()
 plt.show()
+
